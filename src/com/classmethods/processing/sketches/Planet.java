@@ -7,16 +7,16 @@ public class Planet {
     PApplet p = Main.applet;
 
     private float mass;
-    private float radius;
+    private float diameter;
     private int hue;
     private Vector position;
     private Vector velocity;
     private Vector acceleration;
     private Planet sun;
 
-    public Planet(float mass, float radius, int hue, Vector position, Vector velocity, Planet sun) {
+    public Planet(float mass, float diameter, int hue, Vector position, Vector velocity, Planet sun) {
         this.mass = mass;
-        this.radius = radius;
+        this.diameter = diameter;
         this.hue = hue;
         this.position = position;
         this.velocity = velocity;
@@ -45,7 +45,7 @@ public class Planet {
 
     public void drawSelf() {
         p.fill(this.hue, 255, 255);
-        p.ellipse(position.getX(), position.getY(), radius, radius);
+        p.ellipse(position.getX(), position.getY(), diameter, diameter);
     }
 
     public float getMass() {
@@ -56,12 +56,12 @@ public class Planet {
         this.mass = mass;
     }
 
-    public float getRadius() {
-        return radius;
+    public float getDiameter() {
+        return diameter;
     }
 
-    public void setRadius(float radius) {
-        this.radius = radius;
+    public void setDiameter(float diameter) {
+        this.diameter = diameter;
     }
 
     public int getHue() {
