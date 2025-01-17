@@ -14,7 +14,8 @@ public class Planet {
     private Vector acceleration;
     private Planet sun;
 
-    public Planet(float mass, float diameter, int hue, Vector position, Vector velocity, Planet sun) {
+    public Planet(float mass, float diameter, int hue, Vector position,
+                  Vector velocity, Planet sun) {
         this.mass = mass;
         this.diameter = diameter;
         this.hue = hue;
