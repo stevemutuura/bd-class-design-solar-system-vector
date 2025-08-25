@@ -3,7 +3,7 @@ package com.classmethods.processing.sketches;
 import math.Vector;
 import processing.core.PApplet;
 
-public class Main extends PApplet {
+public class  Main extends PApplet {
     public static PApplet applet;
     StarDrawer starDrawer;
 
